@@ -9,7 +9,7 @@
 </div>
 <div class="row">
     <div class="large-12 columns">
-        <ul class="carousel" data-orbit>
+        <ul class="carousel" data-orbit data-options="timer:false;">
             <li>
                 <img data-interchange="[http://dummyimage.com/640x360/000/fff, (default)], [http://dummyimage.com/1024x576/000/fff, (medium)], [http://dummyimage.com/1140x641/000/fff, (large)],  [http://dummyimage.com/1920x1080/000/fff, (xlarge)]">
             </li>
@@ -23,10 +23,10 @@
     </div>
 </div>
 @section scripts{
-    @*<script>
+    <script>
         $(document).ready(function(){
-            $('.carousel').slick();
+            setTimeout(function () { $(document).resize(); }, 500);
         });
-    </script>*@
+    </script>
 }
 
