@@ -1,0 +1,19 @@
+﻿{"quotes": 
+[
+	{
+	  "id": "1",
+	  "quote": "Example is leadership.",
+	  "author": "Albert Schweitzer"
+	},
+	{
+		"id": "2",
+		"quote": "My own business always bores me to death; I prefer other people's.",
+		"author": "Oscar Wilde"
+	},
+	{
+		"id": "3",
+		"quote": "I knew I was an unwanted baby when I saw that my bath toys were a toaster and a radio.",
+		"author": "Joan Rivers"
+	}
+]
+}

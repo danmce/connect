@@ -1,5 +1,4 @@
-﻿
-@{
+﻿@{
     ViewBag.Title = "Carousel";
 }
 
@@ -8,4 +7,26 @@
         <h1>Carousel</h1>
     </div>
 </div>
+<div class="row">
+    <div class="large-12 columns">
+        <ul class="carousel" data-orbit>
+            <li>
+                <img data-interchange="[http://dummyimage.com/640x360/000/fff, (default)], [http://dummyimage.com/1024x576/000/fff, (medium)], [http://dummyimage.com/1140x641/000/fff, (large)],  [http://dummyimage.com/1920x1080/000/fff, (xlarge)]">
+            </li>
+            <li>
+                <img data-interchange="[http://dummyimage.com/640x360/000/ccc, (default)], [http://dummyimage.com/1024x576/000/ccc, (medium)], [http://dummyimage.com/1140x641/000/ccc, (large)],  [http://dummyimage.com/1920x1080/000/ccc, (xlarge)]">
+            </li>
+            <li>
+                <img data-interchange="[http://dummyimage.com/640x360/000/333, (default)], [http://dummyimage.com/1024x576/000/333, (medium)], [http://dummyimage.com/1140x641/000/333, (large)],  [http://dummyimage.com/1920x1080/000/333, (xlarge)]">
+            </li>
+        </ul>
+    </div>
+</div>
+@section scripts{
+    @*<script>
+        $(document).ready(function(){
+            $('.carousel').slick();
+        });
+    </script>*@
+}
 
