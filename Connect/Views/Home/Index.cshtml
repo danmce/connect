@@ -6,24 +6,33 @@
         <h1>Connect</h1>
     </div>
 </div>
-
+<div class="row">
+    <div class="large-12 columns">
+        <p>Tested only on Google Chrome.</p>
+    </div>
+</div>
 <div class="row">
     <div class="large-4 medium-4 small-12 columns">
         <div class="callout panel">
             <h2>@Html.ActionLink("Block", "Index", "Block")</h2>
-            <p>Info</p>
+            <p>Click and drag movable blocks using HTML5 canvas with fallback to jQueryUI draggable.</p>
+            <p>Uses <a href="http://www.createjs.com/" target="_blank">create.js</a> to create clickable movable objects from shapes drawn on the canvas.</p>
+            <p>TODO: make canvas responsive and stop jump when object not clicked on centre. Refactor JavaScript.</p>
         </div>
     </div>
     <div class="large-4 medium-4 small-12 columns">
         <div class="callout panel">
             <h2>@Html.ActionLink("Carousel", "Index", "Carousel")</h2>
-            <p>Info</p>
+            <p>Uses Foundations Orbital Slider in conjunction with Interchange Responsive Content. Images are loaded dynamically in relation to the device width.</p>
+            <p>&lt;picture&gt; / &lt;srcset&gt; could be used experimentally.</p>
+            <p>TODO: Stop image cropping on window resize when using browser maximise.</p>
         </div>
     </div>
     <div class="large-4 medium-4 small-12 columns">
         <div class="callout panel">
             <h2>@Html.ActionLink("Insert", "Index", "Insert")</h2>
-            <p>Info</p>
+            <p>Data loaded into local variable from json file on server.</p>
+            <p>Uses <a href="http://mustache.github.io/" target="_blank">mustache.js</a> for template.</p>
         </div>
     </div>
 </div>

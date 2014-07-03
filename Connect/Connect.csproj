@@ -234,7 +234,9 @@
     <Content Include="sass\ie.scss" />
     <Content Include="sass\print.scss" />
     <Content Include="sass\screen.scss" />
+    <Content Include="quote.json" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\app.js" />
     <Content Include="Scripts\foundation\fastclick.js" />
     <Content Include="Scripts\foundation\foundation.abide.js" />
     <Content Include="Scripts\foundation\foundation.accordion.js" />

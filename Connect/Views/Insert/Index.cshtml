@@ -9,35 +9,21 @@
 </div>
 <div class="row">
     <div class="large-12 columns">
-        <button>Update quote</button>
-        <div class="panel callout radius">
-            <h5>Click the button to get a quote.</h5>
-        </div>
+        <button id="insert">Update quote</button>
+            <div class="panel callout radius" id="panel">
+               <h5>Keep clicking button to update quote</h5>
+            </div>
     </div>
 </div>
 
+<script id="quoteTpl" type="text/template">
+        <h5>{{quote}}</h5>
+        <p>{{author}}</p>
+</script>
 
 @section scripts{
     <script>
-        var quotes, loadQuotes, displayQuote;
-        displayQuote = function () {
-            var rnd, q;
-            rnd = Math.floor(Math.random() * quotes.length);
-            q = quotes[rnd];
-            $('.panel').html('<h5>' + q.quote + '</h5><p>' + q.author + '</p>');
-        };
-        loadQuotes = function () {
-            if (typeof quotes == 'undefined') {
-                $.getJSON("quote.json", function (json) {
-                    quotes = json.quotes;
-                    displayQuote();
-                })
-            } else {
-                displayQuote();
-            };
-        }
-
-        $('button').click(loadQuotes);
+        CONNECT.displayQuote('#insert', '#quoteTpl', '.panel');
     </script>
 }
 

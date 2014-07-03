@@ -3,3 +3,11 @@
 @import "normalize";
 @import "foundation";
 @import "foundation.mvc";
+.block {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+.block-alternate {
+    background-color: blue;
+}
